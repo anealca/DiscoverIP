@@ -1,0 +1,19 @@
+Version 0.8:
+	- Resolve single thread for broadcast and listener (IP Discovery)
+	- Added TCP/IP logic for Async TX<->RX
+		- Seems to work OK on LAN on single PC
+		- Detects Cnct loss via Exception
+		- Can Re-connect OK on single PC with multiple IP Addresses via TCP
+TODO:
+	- Determine which port to use for WIFI (340?)
+	- Test LAN using 2 PC's
+	
+Version 0.7
+	- LAN IP list detected OK
+	- UDP Connect OK using 2 threads (Broadcaster and Listener)
+	- UDP Port = 8888 (Listener on port-1)
+TODO: 
+	- Determine which port to use for WIFI (340?)
+	- Make it a single UDP task
+	- Maybe use a socket on UDP to TX<->RX ?
+	- Add TCP Logic
